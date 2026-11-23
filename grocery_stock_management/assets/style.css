@@ -1,0 +1,122 @@
+
+/* Main colors */
+:root {
+    --green: #16834b;
+    --ink: #1e293b;
+    --muted: #64748b;
+    --line: #e8edf0;
+}
+
+/* Body design */
+body {
+    background-color: #f5f8f6;
+    color: var(--ink);
+    min-height: 100vh;
+}
+
+/* Navigation bar */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+/* Page title */
+.eyebrow {
+    color: var(--green);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Dashboard cards and panels */
+.stat-card,
+.panel {
+    background-color: white;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Dashboard information */
+.stat-label {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.stat-value {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.stat-note {
+    color: gray;
+    font-size: 12px;
+}
+
+/* Table design */
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #eaf5ee;
+    color: #333;
+    font-size: 13px;
+}
+
+.table td {
+    padding: 12px;
+}
+
+/* Form design */
+.form-panel {
+    max-width: 900px;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-control,
+.form-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+.btn-success {
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+/* Empty table message */
+.empty-state {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Footer */
+footer {
+    color: var(--muted);
+    text-align: center;
+}
+
+/* Mobile screen */
+@media screen and (max-width: 576px) {
+    .panel {
+        padding: 10px;
+    }
+
+    .stat-value {
+        font-size: 23px;
+    }
+}
